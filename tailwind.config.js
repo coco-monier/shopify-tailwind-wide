@@ -20,6 +20,9 @@ module.exports = {
       fontFamily: {
         heading: 'var(--font-heading-family)',
       },
+      borderColor: {
+        DEFAULT: '#000', // This sets the default border color to black
+      },
     },
   },
   plugins: [],

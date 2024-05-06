@@ -102,6 +102,40 @@
     ]
   },
   {
+    "name": "Custom Fonts",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:settings_schema.typography.settings.header__1.content"
+      },
+      {
+        "type": "checkbox",
+        "id": "type_use_custom",
+        "label": "Use custom fonts",
+        "default": false,
+        "info": "This will override default shopify/system fonts set in the 'Typography' section below."
+      },
+      {
+        "type": "font_picker",
+        "id": "type_header_font_custom",
+        "default": "assistant_n4",
+        "label": "t:settings_schema.typography.settings.type_header_font.label",
+        "info": "t:settings_schema.typography.settings.type_header_font.info"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.typography.settings.header__2.content"
+      },
+      {
+        "type": "font_picker",
+        "id": "type_body_font_custom",
+        "default": "assistant_n4",
+        "label": "t:settings_schema.typography.settings.type_body_font.label",
+        "info": "t:settings_schema.typography.settings.type_body_font.info"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.typography.name",
     "settings": [
       {
@@ -182,9 +216,9 @@
       {
         "type": "range",
         "id": "spacing_grid_horizontal",
-        "min": 4,
+        "min": 0,
         "max": 40,
-        "step": 4,
+        "step": 2,
         "default": 8,
         "unit": "px",
         "label": "t:settings_schema.layout.settings.spacing_grid_horizontal.label"
@@ -192,9 +226,9 @@
       {
         "type": "range",
         "id": "spacing_grid_vertical",
-        "min": 4,
+        "min": 0,
         "max": 40,
-        "step": 4,
+        "step": 2,
         "default": 8,
         "unit": "px",
         "label": "t:settings_schema.layout.settings.spacing_grid_vertical.label"

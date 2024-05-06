@@ -318,10 +318,10 @@
   padding: 0;
 }
 
-.card--standard > .card__content .card__information {
+/* .card--standard > .card__content .card__information {
   padding-left: 0;
   padding-right: 0;
-}
+} */
 
 .card--card.card--media .card__inner .card__information,
 .card--card.card--text .card__inner,

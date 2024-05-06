@@ -8,5 +8,11 @@
   },
   "[liquid]": {
     "editor.formatOnSave": true
-  }
+  },
+  "favorites.resources": [
+    {
+      "filePath": "snippets/card-collection.liquid",
+      "group": "Default"
+    }
+  ]
 }

@@ -13,6 +13,26 @@
     {
       "filePath": "snippets/card-collection.liquid",
       "group": "Default"
+    },
+    {
+      "filePath": "layout/theme.liquid",
+      "group": "Default"
+    },
+    {
+      "filePath": "sections/featured-collection.liquid",
+      "group": "Default"
+    },
+    {
+      "filePath": "README.md",
+      "group": "Default"
+    },
+    {
+      "filePath": "snippets/card-product.liquid",
+      "group": "Default"
+    },
+    {
+      "filePath": "snippets/price.liquid",
+      "group": "Default"
     }
   ]
 }

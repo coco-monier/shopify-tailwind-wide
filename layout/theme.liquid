@@ -39,21 +39,28 @@
 
     {% if settings.type_use_custom %}
       {% style %}
-          /* Manually adding fonts for now */
-        {% render 'font_face', name: 'Arnet Black', woff2: 'Arnet-Black.woff2', woff: 'Arnet-Black.woff' %}
-        {% render 'font_face', name: 'Social Condensed', woff2: 'ABCSocialCondensed-RegularItalic.woff2', woff: 'ABCSocialCondensed-RegularItalic.woff' %}
+        /* Manually adding fonts for now */
+        {% render 'font_face', name: 'ABC Social Condensed', woff2: 'ABCSocialCondensed-RegularItalic.woff2', woff: 'ABCSocialCondensed-RegularItalic.woff', style: 'italic' %}
+        {% render 'font_face', name: 'ABC Social Condensed', woff2: 'ABCSocialCondensed-Regular.woff2', woff: 'ABCSocialCondensed-Regular.woff' %}
+        {% render 'font_face', name: 'Quadrant Text Mono', woff2: 'QuadrantTextMono-Regular.woff2', woff: 'QuadrantTextMono-Regular.woff' %}
+
         :root {
-          --font-body-family: 'Social Condensed', {{ settings.type_body_font.fallback_families }};
-          --font-body-style: {{ settings.type_body_font.style }};
+          --font-body-family: 'ABC Social Condensed', {{ settings.type_body_font.fallback_families }};
+          --font-body-style: italic;
           --font-body-weight: {{ settings.type_body_font.weight }};
           --font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
+          --font-body-fallback: {{ settings.type_body_font.fallback_families }};
 
-          --font-heading-family: 'Arnet Black', {{ settings.type_header_font.fallback_families }};
-          --font-heading-style: {{ settings.type_header_font.style }};
+          --font-heading-family: 'ABC Social Condensed', {{ settings.type_header_font.fallback_families }};
+          --font-heading-style: italic;
           --font-heading-weight: {{ settings.type_header_font.weight }};
+          --font-heading-fallback: {{ settings.type_header_font.fallback_families }};
 
           --font-body-scale: {{ settings.body_scale | divided_by: 100.0 }};
           --font-heading-scale: {{ settings.heading_scale | times: 1.0 | divided_by: settings.body_scale }};
+
+          --font-social: 'ABC Social Condensed', {{ settings.type_body_font.fallback_families }};
+          --font-quadrant: 'Quadrant Text Mono', {{ settings.type_body_font.fallback_families }};
         }
       {% endstyle %}
     {% else %}
@@ -310,7 +317,7 @@
     </script>
   </head>
 
-  <body class='gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}'>
+  <body class='gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %} twcss-antialiased'>
     <a class='skip-to-content-link button visually-hidden' href='#MainContent'>
       {{ 'accessibility.skip_to_text' | t }}
     </a>

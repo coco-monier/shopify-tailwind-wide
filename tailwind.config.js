@@ -18,7 +18,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        heading: 'var(--font-heading-family)',
+        social: 'var(--font-social), var(--font-heading-fallback)',
+        quadrant: 'var(--font-quadrant), var(--font-body-fallback)',
       },
       borderColor: {
         DEFAULT: '#000', // This sets the default border color to black

@@ -607,18 +607,15 @@ video {
   --tw-backdrop-sepia: ;
 }
 
-.twcss-border-collapse {
-  border-collapse: collapse;
+.twcss-font-quadrant {
+  font-family: var(--font-quadrant), var(--font-body-fallback);
 }
 
-.twcss-border-2 {
-  border-width: 2px;
+.twcss-uppercase {
+  text-transform: uppercase;
 }
 
-.twcss-outline {
-  outline-style: solid;
-}
-
-.twcss-outline-2 {
-  outline-width: 2px;
+.twcss-antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

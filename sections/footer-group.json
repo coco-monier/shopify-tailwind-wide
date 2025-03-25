@@ -8,22 +8,22 @@
         "footer-0": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
+            "heading": "Info",
+            "menu": "legal-menu"
           }
         },
         "footer-1": {
           "type": "link_list",
           "settings": {
-            "heading": "Info",
-            "menu": "footer"
+            "heading": "Learn",
+            "menu": "brew-guides"
           }
         },
         "footer-2": {
           "type": "text",
           "settings": {
-            "heading": "Our mission",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            "heading": "Connect",
+            "subtext": "<h1>Cafe<\/h1><p><a href=\"mailto:cafe@wideopenroadcoffee.com.au\" target=\"_blank\" title=\"mailto:cafe@wideopenroadcoffee.com.au\">cafe@wideopenroadcoffee.com.au<\/a><\/p><p> <\/p><h1>Online<\/h1><p><a href=\"mailto:info@wideopenroadcoffee.com.au\" target=\"_blank\" title=\"mailto:info@wideopenroadcoffee.com.au\">info@wideopenroadcoffee.com.au<\/a><\/p>"
           }
         }
       },
@@ -34,12 +34,13 @@
       ],
       "settings": {
         "color_scheme": "scheme-1",
-        "newsletter_enable": true,
+        "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": false,
         "show_social": true,
         "enable_country_selector": false,
         "enable_language_selector": false,
-        "payment_enable": true,
+        "payment_enable": false,
         "show_policy": false,
         "margin_top": 48,
         "padding_top": 36,

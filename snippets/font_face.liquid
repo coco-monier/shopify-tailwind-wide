@@ -1,3 +1,4 @@
 @font-face { font-family: {{ name | default: 'Helvetica' }}; font-weight: {{ weight | default: 400 }}; font-style:
-normal; font-display: swap; src: url("{{ woff2 | asset_url }}") format("woff2"), url("{{ woff | asset_url }}")
-format("woff"); }
+{{ style | default: 'normal' }}; font-display: swap; src: url("{{ woff2 | asset_url }}") format("woff2"), url("
+{{- woff | asset_url -}}
+") format("woff"); }
